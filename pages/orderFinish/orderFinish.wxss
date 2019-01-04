@@ -1,15 +1,46 @@
 /* pages/orderFinish/orderFinish.wxss */
+@import "../lib/weui.wxss";
+.orderFinish{
+  font-size: 16px;
+}
 .search{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-right:20px;
+  padding: 20px ;
 }
 .search-date{
   display: flex;
   justify-content: space-between;
-  align-items: center
+  align-items: center;
 }
-.date{
-  padding:0 10px;
+.search-date .inputBox{
+  margin-left: 10px;
+  border:1px solid #eee;
+  padding-left: 10px;
+  width: 150px;
+}
+.today{
+  background: #5B9CFE;
+  height: 30px;
+  line-height: 30px;
+  width: 60px;
+  text-align: center;
+  color:#fff;
+  border-radius: 5px;
+  box-shadow: 2px 2px 12px #5B9CFE;
+}
+.orderList{
+  padding: 0 20px;
+}
+.month{
+  padding-top: 20px;
+}
+.orderContent{
+  margin-top: 10px;
+  padding:10px ;
+  border:1px solid #eee;
+}
+.orderContent text{
+  padding-left: 10px;
 }

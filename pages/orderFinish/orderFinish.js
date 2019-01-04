@@ -5,9 +5,22 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    currentTime: '请选择日期',
+    orderList:[
+      {
+        monthDay: '2018-12',
+        dateDay:'2018-12-31'
+      },
+      {
+        monthDay: '2018-11'
+      }
+    ]
   },
-
+  bindDateChange: function (e) {
+    this.setData({
+      currentTime: e.detail.value
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

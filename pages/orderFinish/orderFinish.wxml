@@ -2,22 +2,28 @@
 <view class="orderFinish">
   <view class="search">
     <view class="search-date">
-      <text class="date">日期</text>
-      <input type='text' placeholder='输入日期'/>
-    </view>
-    <view>
-      <view>今日</view>
-    </view>
-  </view>
-  <view>
-    <view>2018-12</view>
-    <view>
-      <view class="padding-15">
-        <view>
-          <text>日期：</text>
-          <text>2018-12-31</text>
-        </view>
+      <text>日期</text>
+      <picker class="inputBox" mode="date" value="{{currentTime}}" start="1995-09-09" end="2099-09-09" bindchange="bindDateChange">
+      <view class="picker">
+       {{currentTime}}
       </view>
+    </picker>
     </view>
+    <view class="today">今日</view>
+  </view>
+
+
+
+  <view class="orderList">
+    <block wx:for="{{orderList}}" wx:for-index='index' wx:for-item='item'>
+      <view class="month">{{item.monthDay}}</view>
+      <block>
+        <view class="orderContent">
+          <view>
+            日期:<text>{{item.dateDay}}</text>
+          </view>
+        </view>
+      </block>
+    </block>
   </view>
 </view>
