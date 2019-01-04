@@ -1,0 +1,57 @@
+/* pages/order/order.wxss */
+.order {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50px;
+}
+.order .logoImg{
+  width: 100%;
+  text-align: center;
+}
+.order .logoImg .merchantLogo{
+  width: 80px;
+  height: 80px;
+}
+.order .merchantContent{
+  padding: 20px;
+}
+.order .merchantContent text{
+  font-size: 16px;
+  color:#808080;
+}
+.order .merchantContent .goodsList{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+  /* border-bottom:1px solid #5B9CFE; */
+}
+.order .merchantContent .goodsList .goodsIcon{
+  width: 80px;
+  height:80px;
+  margin-right: 20px;
+}
+.goodsContent{
+  font-size: 15px;
+  padding: 10px 0;
+  flex: 1;
+}
+.goodsContent .sales{
+  color:#a3a3a3;
+  font-size: 13px;
+  padding: 10px 0;
+}
+.numberChange{
+  display: flex;
+}
+.numberChange text{
+  padding: 0 15px;
+}
+.numberChange .num_reduce{
+  width: 25px;
+  height: 25px;
+}
+.numberChange .num_increase{
+  width: 25px;
+  height: 25px;
+}

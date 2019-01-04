@@ -1,0 +1,23 @@
+<view class="order">
+  <view class="logoImg">
+    <image src="{{merchantLogo}}" class="merchantLogo"></image>
+  </view>
+  <view class="merchantContent">
+    <text>本周商家-{{merchantTitle}}</text>
+    <block wx:for="{{goodsList}}" wx:for-index='ind' wx:for-item='item'>
+      <view class="goodsList">
+        <image src="{{item.goodsIcon}}" class="goodsIcon"></image>
+        <view class="goodsContent">
+          <view>{{item.goodsTitle}}</view>
+          <view class="sales">本周销量{{item.goodsWeekNum}}份</view>
+          <view>单价：￥{{item.goodsPrice}}</view>
+        </view>
+        <view class="numberChange">
+          <image src="../../images/jian_icon_on.png" bindtap='reduce' class="num_reduce"></image>
+          <text>{{item.num}}</text>
+          <image src="../../images/content_icon_increase.png" bindtap='addnum' class="num_increase"></image>
+        </view>
+      </view>
+    </block>
+  </view>
+</view>

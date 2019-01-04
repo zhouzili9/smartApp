@@ -1,21 +1,49 @@
 /**index.wxss**/
-.userinfo {
+.login {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items:center;
+  margin-top: 60px;
 }
-
-.userinfo-avatar {
-  width: 128rpx;
-  height: 128rpx;
-  margin: 20rpx;
-  border-radius: 50%;
+.login image{
+  width: 80px;
+  height: 80px;
+  margin-bottom: 30px;
 }
-
-.userinfo-nickname {
-  color: #aaa;
+.box {
+  display: flex;
+  font-size: 16px;
+  margin: 15px 0;
+  height: 35px;
+  line-height: 35px;
+  border-bottom:1px solid #eee;
+  color:#808080;
 }
-
-.usermotto {
-  margin-top: 200px;
+.box text{
+  margin-right: 20px;
+  padding-left: 10px;
+}
+.box input{
+  /* border:1px solid #eee; */
+  border-radius: 5px;
+  padding-left: 10px;
+  height: 35px;
+  line-height: 35px;
+  border:none;
+  outline: none;
+  /* box-shadow:inset 1px 1px 1px 1px #AAC2E7; */
+  text-align: right;
+}
+.login .loginBtn{
+  margin-top: 50px;
+  /* width: 80px; */
+  height: 35px;
+  line-height: 35px;
+  /* box-shadow: 1px 1px 1px 1px #AAC2E7; */
+  /* border:1px solid #eee; */
+  border-radius: 5px;
+  font-size: 16px;
+  background: #5B9CFE;
+  color:#fff;
+  width: 60%;
 }
