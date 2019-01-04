@@ -1,53 +1,13 @@
-// pages/order/order.js
+// pages/orderFinish/orderFinish.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    merchantLogo:'../../images/logo.png',
-    merchantTitle:"大排面",
-    goodsList:[
-      {
-        goodsIcon: '../../images/logo.png',
-        goodsTitle:'名称',
-        goodsWeekNum:20,
-        goodsPrice:15
-      },
-      {
-        goodsIcon: '../../images/logo.png',
-        goodsTitle: '名称1',
-        goodsWeekNum: 30,
-        goodsPrice: 11
-      }
-    ],
-    num: 1
+
   },
-  addnum: function () {
-    var num = Number(this.data.num);
-    num++;
-    if(num > 2){
-      return;
-    }
-    this.setData({
-      num: num
-    })
-  },
-  reduce: function () {
-    var num = Number(this.data.num);
-    num--;
-    if (num < 1) {
-      return;
-    }
-    this.setData({
-      num: num
-    })
-  },
-  toFinish:function(){
-    wx.navigateTo({
-      url: '../orderFinish/orderFinish'
-    })
-  },
+
   /**
    * 生命周期函数--监听页面加载
    */

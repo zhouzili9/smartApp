@@ -1,0 +1,23 @@
+<!--pages/orderFinish/orderFinish.wxml-->
+<view class="orderFinish">
+  <view class="search">
+    <view class="search-date">
+      <text class="date">日期</text>
+      <input type='text' placeholder='输入日期'/>
+    </view>
+    <view>
+      <view>今日</view>
+    </view>
+  </view>
+  <view>
+    <view>2018-12</view>
+    <view>
+      <view class="padding-15">
+        <view>
+          <text>日期：</text>
+          <text>2018-12-31</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

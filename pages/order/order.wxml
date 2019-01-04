@@ -14,10 +14,14 @@
         </view>
         <view class="numberChange">
           <image src="../../images/jian_icon_on.png" bindtap='reduce' class="num_reduce"></image>
-          <text>{{item.num}}</text>
+          <text>{{num}}</text>
           <image src="../../images/content_icon_increase.png" bindtap='addnum' class="num_increase"></image>
         </view>
       </view>
     </block>
+  </view>
+  <view class="goodsFoot">
+    <text>名称、名称</text>
+    <view class="orderBtn" bindtap='toFinish'>确认点餐</view>
   </view>
 </view>

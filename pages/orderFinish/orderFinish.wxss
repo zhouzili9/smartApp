@@ -1,0 +1,15 @@
+/* pages/orderFinish/orderFinish.wxss */
+.search{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right:20px;
+}
+.search-date{
+  display: flex;
+  justify-content: space-between;
+  align-items: center
+}
+.date{
+  padding:0 10px;
+}
